@@ -1,0 +1,42 @@
+# ====================================================================
+# Seizure Detection Project - Gitignore Configuration
+# Prevents raw clinical EEG data and large NumPy arrays from being tracked.
+# ====================================================================
+
+# --- Project Datasets & Raw Physical Data ---
+raw_data/
+processed_data/
+*.edf
+*.NPY
+*.npy
+*.txt
+
+# --- PyTorch Model Weights & Checkpoints ---
+*.pth
+*.pt
+*.onnx
+
+# --- Python Environment & Build Artifacts ---
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv/
+.env
+.ipython/
+.pytest_cache/
+
+# --- IDEs & System Settings (Windows/Mac/VS Code) ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs and Cache Directories ---
+*.log
+.cache/
